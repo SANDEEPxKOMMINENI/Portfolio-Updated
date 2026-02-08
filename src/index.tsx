@@ -10,9 +10,9 @@ app.get('/', (c) => {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sandeep Kommineni — AI/ML Engineer</title>
 <meta name="description" content="Sandeep Kommineni - AI/ML Engineer building production-grade AI platforms. Expert in Generative AI, LLMs, real-time systems, and full-stack development.">
-<meta name="keywords" content="AI Engineer, ML Engineer, Full Stack Developer, Generative AI, LLM, TruGen.ai, MoveLogic.ai">
 <meta property="og:title" content="Sandeep Kommineni — AI/ML Engineer">
 <meta property="og:description" content="Building production-grade AI platforms. Expert in GenAI, LLMs, and full-stack development.">
+<meta property="og:image" content="/static/profile.jpg">
 <meta property="og:type" content="website">
 <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,14 +23,9 @@ app.get('/', (c) => {
 </head>
 <body>
 
-<!-- Noise texture overlay -->
 <div class="noise"></div>
-
-<!-- Gradient blobs -->
 <div class="blob blob-1"></div>
 <div class="blob blob-2"></div>
-
-<!-- Cursor spotlight -->
 <div class="spotlight" id="spotlight"></div>
 
 <!-- Navigation -->
@@ -41,11 +36,12 @@ app.get('/', (c) => {
       <span class="logo-text">sandeep<span class="logo-dot">.</span></span>
     </a>
     <div class="nav-links" id="navLinks">
+      <a href="#about" class="nav-link">About</a>
       <a href="#experience" class="nav-link">Experience</a>
+      <a href="#work" class="nav-link">Work</a>
       <a href="#projects" class="nav-link">Projects</a>
       <a href="#skills" class="nav-link">Skills</a>
-      <a href="#certifications" class="nav-link">Credentials</a>
-      <a href="#education" class="nav-link">Education</a>
+      <a href="#contact" class="nav-link">Contact</a>
     </div>
     <div class="nav-right">
       <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
@@ -61,11 +57,12 @@ app.get('/', (c) => {
 
 <!-- Mobile Menu -->
 <div class="mobile-nav" id="mobileNav">
+  <a href="#about" class="mobile-link">About</a>
   <a href="#experience" class="mobile-link">Experience</a>
+  <a href="#work" class="mobile-link">Production Work</a>
   <a href="#projects" class="mobile-link">Projects</a>
   <a href="#skills" class="mobile-link">Skills</a>
   <a href="#certifications" class="mobile-link">Credentials</a>
-  <a href="#education" class="mobile-link">Education</a>
   <a href="#contact" class="mobile-link">Contact</a>
   <div class="mobile-socials">
     <a href="https://github.com/SANDEEPxKOMMINENI" target="_blank"><i class="fab fa-github"></i></a>
@@ -77,50 +74,50 @@ app.get('/', (c) => {
 <!-- ==================== HERO ==================== -->
 <section class="hero" id="hero">
   <div class="hero-container">
-    <div class="hero-eyebrow reveal-up">
+
+    <!-- Profile photo with rings -->
+    <div class="hero-photo-wrap reveal-up">
+      <div class="photo-ring"></div>
+      <div class="photo-ring ring-2"></div>
+      <div class="photo-glow"></div>
+      <img src="/static/profile.jpg" alt="Sandeep Kommineni" class="hero-photo" loading="eager">
+    </div>
+
+    <div class="hero-eyebrow reveal-up d1">
       <div class="status-dot"></div>
       <span>Available for opportunities</span>
     </div>
 
-    <h1 class="hero-headline reveal-up d1">
-      I build <span class="text-gradient">AI systems</span><br>
-      that ship to <span class="text-gradient">production.</span>
+    <h1 class="hero-headline reveal-up d2">
+      Hi, I'm <span class="text-gradient">Sandeep.</span>
     </h1>
 
-    <p class="hero-sub reveal-up d2">
-      AI/ML Engineer with production experience at <strong>TruGen.ai</strong> and <strong>MoveLogic.ai</strong>.
-      Building multimodal conversational AI, real-time systems, and scalable full-stack platforms.
+    <p class="hero-tagline reveal-up d3">
+      AI/ML Engineer &bull; Full-Stack Developer &bull; GenAI Builder
     </p>
 
-    <div class="hero-actions reveal-up d3">
-      <a href="#projects" class="btn-primary">
-        View Work
+    <p class="hero-sub reveal-up d4">
+      Building production-grade AI platforms at <strong>TruGen.ai</strong> and <strong>MoveLogic.ai</strong>.<br>
+      Expert in Generative AI, LLMs, real-time systems, and scalable full-stack applications.
+    </p>
+
+    <div class="hero-actions reveal-up d5">
+      <a href="#work" class="btn-primary">
+        View My Work
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M7 7h10v10"/></svg>
       </a>
       <a href="https://drive.google.com/file/d/1-_a8XWPrCqR7NvVfdMBV8ragr2U8BfjX/view" target="_blank" class="btn-outline">
         <i class="fas fa-file-text"></i> Resume
       </a>
+      <a href="https://github.com/SANDEEPxKOMMINENI" target="_blank" class="btn-outline">
+        <i class="fab fa-github"></i> GitHub
+      </a>
     </div>
 
-    <div class="hero-profile reveal-up d4">
-      <img src="https://github.com/SANDEEPxKOMMINENI.png" alt="Sandeep Kommineni" class="hero-avatar" loading="eager">
-      <div class="hero-meta">
-        <span class="meta-name">Sandeep Kommineni</span>
-        <span class="meta-role">AI/ML Engineer &bull; Full-Stack Developer &bull; GenAI Builder</span>
-        <span class="meta-location"><i class="fas fa-map-marker-alt"></i> Hyderabad, India &bull; Open to relocation</span>
-      </div>
-      <div class="hero-links">
-        <a href="https://github.com/SANDEEPxKOMMINENI" target="_blank" class="icon-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/sandeep-chowdary-kommineni/" target="_blank" class="icon-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:sandeepkommineni2@gmail.com" class="icon-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
-      </div>
-    </div>
-
-    <!-- Floating metrics -->
     <div class="hero-metrics reveal-up d5">
       <div class="metric">
-        <span class="metric-value" data-count="3">0</span>
-        <span class="metric-label">Production Apps</span>
+        <span class="metric-value" data-count="2">0</span>
+        <span class="metric-label">Production Platforms</span>
       </div>
       <div class="metric-divider"></div>
       <div class="metric">
@@ -129,7 +126,7 @@ app.get('/', (c) => {
       </div>
       <div class="metric-divider"></div>
       <div class="metric">
-        <span class="metric-value" data-count="6">0</span>
+        <span class="metric-value" data-count="7">0</span>
         <span class="metric-label">Certifications</span>
       </div>
       <div class="metric-divider"></div>
@@ -141,8 +138,69 @@ app.get('/', (c) => {
   </div>
 </section>
 
+<!-- ==================== ABOUT ME ==================== -->
+<section class="section" id="about">
+  <div class="section-container">
+    <div class="section-label reveal-up">About Me</div>
+    <h2 class="section-heading reveal-up d1">
+      Passionate about building<br><span class="text-gradient">AI that ships.</span>
+    </h2>
+
+    <div class="about-layout">
+      <div class="about-photo-col reveal-up">
+        <div class="about-photo-card">
+          <img src="/static/profile.jpg" alt="Sandeep Kommineni" class="about-photo">
+          <div class="about-name-card">
+            <strong>Sandeep Kommineni</strong>
+            <span>AI/ML Engineer</span>
+            <div class="about-socials">
+              <a href="https://github.com/SANDEEPxKOMMINENI" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/sandeep-chowdary-kommineni/" target="_blank"><i class="fab fa-linkedin"></i></a>
+              <a href="mailto:sandeepkommineni2@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-text-col">
+        <p class="about-para reveal-up">
+          I'm an <strong>AI/ML Engineer</strong> with real-world experience building and deploying production-grade AI platforms. Currently contributing to <strong>TruGen.ai</strong> — a multimodal conversational AI platform — at Truviz, where I work on AI workflows, system architecture, and real-time features using LiveKit and advanced LLMs.
+        </p>
+        <p class="about-para reveal-up">
+          Previously, I built core features for <strong>MoveLogic.ai</strong> — an AI-powered logistics SaaS serving 1000+ users — at Isoft Technologies. I've also done AI research at <strong>Massey University</strong> (New Zealand), developing domain-specific models and intelligent agent prototypes.
+        </p>
+        <p class="about-para reveal-up">
+          I'm a <strong>final-year B.Tech student</strong> specializing in AI/ML at KL University (CGPA: 9.0), with 7 industry certifications from AWS, Oracle, Salesforce, and GitHub. Ranked <strong>6th out of 4,500+</strong> at IIT Convolve 3.0 hackathon.
+        </p>
+        <p class="about-para reveal-up">
+          My interests span Generative AI, LLMs, Prompt Engineering, RAG, Agentic AI, and applied ML — always focused on building things that real people use.
+        </p>
+
+        <div class="about-quick reveal-up">
+          <div class="quick-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Hyderabad, India &bull; Open to relocation</span>
+          </div>
+          <div class="quick-item">
+            <i class="fas fa-graduation-cap"></i>
+            <span>B.Tech CSE (AI/ML), KL University &bull; 9.0 CGPA</span>
+          </div>
+          <div class="quick-item">
+            <i class="fas fa-envelope"></i>
+            <span>sandeepkommineni2@gmail.com</span>
+          </div>
+          <div class="quick-item">
+            <i class="fas fa-phone"></i>
+            <span>+91 9573456001</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ==================== EXPERIENCE ==================== -->
-<section class="section" id="experience">
+<section class="section section-alt" id="experience">
   <div class="section-container">
     <div class="section-label reveal-up">Experience</div>
     <h2 class="section-heading reveal-up d1">
@@ -158,7 +216,7 @@ app.get('/', (c) => {
               <i class="fas fa-brain"></i>
             </div>
             <div>
-              <h3 class="exp-company">Truviz — TruGen.ai</h3>
+              <h3 class="exp-company">Truviz (TruGen.ai)</h3>
               <p class="exp-role">AI/ML Engineer</p>
             </div>
           </div>
@@ -178,7 +236,7 @@ app.get('/', (c) => {
         </div>
       </div>
 
-      <!-- AUT -->
+      <!-- Massey University -->
       <div class="exp-card reveal-up">
         <div class="exp-header">
           <div class="exp-company-info">
@@ -186,12 +244,12 @@ app.get('/', (c) => {
               <i class="fas fa-flask"></i>
             </div>
             <div>
-              <h3 class="exp-company">Auckland University of Technology</h3>
-              <p class="exp-role">Research Intern (AI/ML)</p>
+              <h3 class="exp-company">Massey University</h3>
+              <p class="exp-role">AI Research Intern</p>
             </div>
           </div>
           <div class="exp-meta-right">
-            <span class="exp-date">Jun 2025 — Jan 2026</span>
+            <span class="exp-date">Mar 2025 — Jun 2025</span>
             <span class="exp-loc">Remote / Auckland, NZ</span>
           </div>
         </div>
@@ -205,7 +263,7 @@ app.get('/', (c) => {
         </div>
       </div>
 
-      <!-- MoveLogic.ai -->
+      <!-- Isoft Technologies (MoveLogic.ai) -->
       <div class="exp-card reveal-up">
         <div class="exp-header">
           <div class="exp-company-info">
@@ -213,8 +271,8 @@ app.get('/', (c) => {
               <i class="fas fa-truck"></i>
             </div>
             <div>
-              <h3 class="exp-company">MoveLogic.ai</h3>
-              <p class="exp-role">Full-Stack Developer</p>
+              <h3 class="exp-company">Isoft Technologies (MoveLogic.ai)</h3>
+              <p class="exp-role">Full-Stack AI Engineer</p>
             </div>
           </div>
           <div class="exp-meta-right">
@@ -235,30 +293,34 @@ app.get('/', (c) => {
   </div>
 </section>
 
-<!-- ==================== PROJECTS ==================== -->
-<section class="section section-alt" id="projects">
+<!-- ==================== PRODUCTION WORK ==================== -->
+<section class="section" id="work">
   <div class="section-container">
-    <div class="section-label reveal-up">Projects</div>
+    <div class="section-label reveal-up">Production Work</div>
     <h2 class="section-heading reveal-up d1">
-      Things I've<br><span class="text-gradient">built.</span>
+      Live platforms I've<br><span class="text-gradient">shipped.</span>
     </h2>
+    <p class="section-sub reveal-up d2">Real products in production, serving real users — not just code on GitHub.</p>
 
-    <!-- Featured Projects -->
     <div class="featured-projects">
 
       <div class="featured-card reveal-up">
         <div class="featured-visual" style="background: linear-gradient(135deg, #6366f1 0%, #a78bfa 100%);">
           <div class="featured-icon"><i class="fas fa-comments"></i></div>
-          <span class="featured-year">2026</span>
+          <div class="featured-badges">
+            <span class="f-badge live-badge"><span class="live-dot"></span> Live</span>
+            <span class="f-badge">@ Truviz</span>
+          </div>
         </div>
         <div class="featured-body">
           <div class="featured-top">
-            <span class="featured-label">Live Production</span>
+            <span class="featured-label">Company Product &bull; 2026</span>
             <h3>TruGen.ai</h3>
+            <p class="featured-subtitle">Multimodal Conversational AI Platform</p>
           </div>
-          <p>Multimodal Conversational AI Platform — Real-time system with LiveKit, OpenAI, Groq, and cloud infrastructure. Agentic & context-aware AI for advanced conversational agents.</p>
+          <p>Real-time multimodal AI system built with LiveKit, OpenAI, Groq, and cloud infrastructure. Features agentic & context-aware AI capabilities for advanced conversational agents. Currently in active development as an AI/ML Engineer.</p>
           <div class="featured-tags">
-            <span>LiveKit</span><span>OpenAI</span><span>Groq</span><span>Multimodal AI</span><span>Cloud</span>
+            <span>LiveKit</span><span>OpenAI</span><span>Groq</span><span>Multimodal AI</span><span>Agentic AI</span><span>Cloud</span>
           </div>
           <div class="featured-links">
             <a href="https://trugen.ai" target="_blank" class="f-link-primary"><i class="fas fa-external-link-alt"></i> Visit TruGen.ai</a>
@@ -269,16 +331,21 @@ app.get('/', (c) => {
       <div class="featured-card featured-reverse reveal-up">
         <div class="featured-visual" style="background: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);">
           <div class="featured-icon"><i class="fas fa-truck-moving"></i></div>
-          <span class="featured-year">2025</span>
+          <div class="featured-badges">
+            <span class="f-badge live-badge"><span class="live-dot"></span> Live</span>
+            <span class="f-badge">@ Isoft Technologies</span>
+            <span class="f-badge">1000+ Users</span>
+          </div>
         </div>
         <div class="featured-body">
           <div class="featured-top">
-            <span class="featured-label">Live Production &bull; 1000+ Users</span>
+            <span class="featured-label">Company Product &bull; 2025</span>
             <h3>MoveLogic.ai</h3>
+            <p class="featured-subtitle">AI-Powered Moving Logistics SaaS</p>
           </div>
-          <p>AI-Powered Moving Logistics SaaS — Full-stack platform with Next.js, FastAPI, computer vision, and automation logic. 98% uptime serving 1000+ users.</p>
+          <p>Full-stack AI platform with Next.js, FastAPI, computer vision, and automation logic. Engineered core features, built scalable backend, and deployed production-ready system with 98% uptime serving 1000+ active users.</p>
           <div class="featured-tags">
-            <span>Next.js</span><span>FastAPI</span><span>Computer Vision</span><span>Python</span><span>Cloud</span>
+            <span>Next.js</span><span>FastAPI</span><span>Computer Vision</span><span>Python</span><span>Cloud</span><span>REST APIs</span>
           </div>
           <div class="featured-links">
             <a href="https://movelogic.ai" target="_blank" class="f-link-primary"><i class="fas fa-external-link-alt"></i> Visit MoveLogic.ai</a>
@@ -286,10 +353,18 @@ app.get('/', (c) => {
         </div>
       </div>
     </div>
+  </div>
+</section>
 
-    <!-- Project Grid -->
+<!-- ==================== PERSONAL PROJECTS ==================== -->
+<section class="section section-alt" id="projects">
+  <div class="section-container">
+    <div class="section-label reveal-up">Personal Projects</div>
+    <h2 class="section-heading reveal-up d1">
+      Things I've built<br><span class="text-gradient">on my own.</span>
+    </h2>
+
     <div class="project-grid-header reveal-up">
-      <h3>More Projects</h3>
       <div class="filter-pills">
         <button class="pill active" data-filter="all">All</button>
         <button class="pill" data-filter="ai">AI / ML</button>
@@ -309,7 +384,7 @@ app.get('/', (c) => {
           </div>
         </div>
         <h4>San Vortex AI</h4>
-        <p>Multi-model AI chat platform with 50+ models rivaling GPT-4O. Supabase auth, folder organization, media uploads.</p>
+        <p>Multi-model AI chat platform with 50+ models rivaling GPT-4O. Supabase auth, folder organization, theme customization, and media uploads.</p>
         <div class="proj-tags"><span>React</span><span>Supabase</span><span>OpenRouter</span><span>GenAI</span></div>
       </article>
 
@@ -345,7 +420,7 @@ app.get('/', (c) => {
           </div>
         </div>
         <h4>Stock Analysis (Informer)</h4>
-        <p>Transformer-based stock prediction using Informer architecture for time-series forecasting with Gradio UI.</p>
+        <p>Transformer-based stock prediction using Informer architecture for time-series forecasting with Gradio UI and HuggingFace export.</p>
         <div class="proj-tags"><span>Transformer</span><span>Deep Learning</span><span>Gradio</span></div>
       </article>
 
@@ -369,7 +444,7 @@ app.get('/', (c) => {
           </div>
         </div>
         <h4>Amazon ML Challenge 2024</h4>
-        <p>Image feature extraction + LightGBM pipeline for product entity prediction from large-scale datasets.</p>
+        <p>Image feature extraction + LightGBM pipeline for product entity prediction from large-scale e-commerce datasets.</p>
         <div class="proj-tags"><span>Computer Vision</span><span>LightGBM</span><span>Deep Learning</span></div>
       </article>
 
@@ -381,7 +456,7 @@ app.get('/', (c) => {
           </div>
         </div>
         <h4>AnimeRadar</h4>
-        <p>Anime discovery & streaming platform with ML-powered recommendations, adaptive streaming, and dark-mode UI.</p>
+        <p>Anime discovery & streaming platform with ML-powered recommendations, adaptive streaming, and responsive dark-mode UI.</p>
         <div class="proj-tags"><span>React</span><span>Node.js</span><span>MongoDB</span><span>ML</span></div>
       </article>
 
@@ -405,7 +480,7 @@ app.get('/', (c) => {
           </div>
         </div>
         <h4>AWS Serverless URL Shortener</h4>
-        <p>Modern URL shortener with React, TypeScript, AWS Lambda, DynamoDB, and API Gateway.</p>
+        <p>Modern URL shortener with React, TypeScript, AWS Lambda, DynamoDB, and API Gateway. Instant shortening with serverless arch.</p>
         <div class="proj-tags"><span>AWS Lambda</span><span>DynamoDB</span><span>React</span><span>TypeScript</span></div>
       </article>
 
@@ -418,7 +493,7 @@ app.get('/', (c) => {
           </div>
         </div>
         <h4>MoveLogic Form</h4>
-        <p>Multi-step moving inventory form for MoveLogic.ai interview. React + Supabase + Zustand with pixel-perfect design.</p>
+        <p>Multi-step moving inventory form built for MoveLogic.ai interview. React + Supabase + Zustand with pixel-perfect design.</p>
         <div class="proj-tags"><span>React</span><span>Supabase</span><span>Zustand</span></div>
       </article>
 
@@ -430,7 +505,7 @@ app.get('/', (c) => {
           </div>
         </div>
         <h4>Sustainable Living Platform</h4>
-        <p>Comprehensive web platform promoting sustainable living with educational resources and data visualization.</p>
+        <p>Comprehensive web platform promoting sustainable living with educational resources and data visualization tools.</p>
         <div class="proj-tags"><span>React</span><span>Express</span><span>Firebase</span></div>
       </article>
 
@@ -549,7 +624,6 @@ app.get('/', (c) => {
         </div>
         <a href="https://drive.google.com/file/d/1T7DKd0PekARgeUCDnHt3oroFTMUzFoj5/view" target="_blank" class="cert-view"><i class="fas fa-arrow-up-right-from-square"></i></a>
       </div>
-
       <div class="cert-item reveal-up">
         <div class="cert-icon"><i class="fas fa-cloud"></i></div>
         <div class="cert-info">
@@ -558,7 +632,6 @@ app.get('/', (c) => {
         </div>
         <a href="https://drive.google.com/file/d/1teGaotHcjOpdqRU7RJS4rwZBGidbeOWa/view" target="_blank" class="cert-view"><i class="fas fa-arrow-up-right-from-square"></i></a>
       </div>
-
       <div class="cert-item reveal-up">
         <div class="cert-icon"><i class="fas fa-microchip"></i></div>
         <div class="cert-info">
@@ -567,7 +640,6 @@ app.get('/', (c) => {
         </div>
         <a href="https://drive.google.com/file/d/1t51xfBT_0-yfwV7_-HmzK_JEX4pCGyMa/view" target="_blank" class="cert-view"><i class="fas fa-arrow-up-right-from-square"></i></a>
       </div>
-
       <div class="cert-item reveal-up">
         <div class="cert-icon"><i class="fab fa-salesforce"></i></div>
         <div class="cert-info">
@@ -576,7 +648,6 @@ app.get('/', (c) => {
         </div>
         <a href="https://drive.google.com/file/d/1qVV4Z0PPHPe0VI1h_GSKCxmSa9JuY4YZ/view" target="_blank" class="cert-view"><i class="fas fa-arrow-up-right-from-square"></i></a>
       </div>
-
       <div class="cert-item reveal-up">
         <div class="cert-icon"><i class="fab fa-github"></i></div>
         <div class="cert-info">
@@ -585,7 +656,6 @@ app.get('/', (c) => {
         </div>
         <a href="https://drive.google.com/file/d/1HEhn7S0fIuqUVg6dRxutCRRRQEMDdOvS/view" target="_blank" class="cert-view"><i class="fas fa-arrow-up-right-from-square"></i></a>
       </div>
-
       <div class="cert-item reveal-up">
         <div class="cert-icon"><i class="fas fa-robot"></i></div>
         <div class="cert-info">
@@ -594,7 +664,6 @@ app.get('/', (c) => {
         </div>
         <a href="https://drive.google.com/file/d/1BqLjdQCOK8Z4rpkE9K4k-B_Bi3VBbSwB/view" target="_blank" class="cert-view"><i class="fas fa-arrow-up-right-from-square"></i></a>
       </div>
-
       <div class="cert-item reveal-up">
         <div class="cert-icon"><i class="fab fa-java"></i></div>
         <div class="cert-info">
@@ -614,12 +683,11 @@ app.get('/', (c) => {
     <h2 class="section-heading reveal-up d1">
       Academic<br><span class="text-gradient">foundation.</span>
     </h2>
-
     <div class="edu-list">
       <div class="edu-item reveal-up">
         <div class="edu-year">2022–2026</div>
         <div class="edu-content">
-          <h3>K L University</h3>
+          <h3>KL University</h3>
           <p class="edu-degree">B.Tech — Computer Science & Engineering (AI & ML)</p>
           <p class="edu-detail">CGPA: 9.0/10 &bull; Top 15% ranking &bull; Vaddeswaram, Andhra Pradesh</p>
         </div>
@@ -652,10 +720,9 @@ app.get('/', (c) => {
       Let's build<br><span class="text-gradient">something great.</span>
     </h2>
     <p class="contact-desc reveal-up d2">
-      I'm currently open to full-time roles, freelance projects, and research collaborations.
+      Open to full-time roles, freelance projects, and research collaborations.<br>
       Feel free to reach out — I'd love to chat.
     </p>
-
     <div class="contact-cards">
       <a href="mailto:sandeepkommineni2@gmail.com" class="contact-card reveal-up">
         <i class="fas fa-envelope"></i>
@@ -674,7 +741,6 @@ app.get('/', (c) => {
         <span>GitHub</span>
       </a>
     </div>
-
     <div class="contact-location reveal-up">
       <i class="fas fa-map-marker-alt"></i>
       Hyderabad, Telangana, India &bull; Available for relocation
@@ -687,7 +753,7 @@ app.get('/', (c) => {
   <div class="footer-container">
     <div class="footer-left">
       <span class="footer-logo">sandeep<span class="logo-dot">.</span></span>
-      <span class="footer-copy">&copy; 2026 Sandeep Kommineni</span>
+      <span class="footer-copy">&copy; 2026 Sandeep Kommineni. Built with passion.</span>
     </div>
     <div class="footer-right">
       <a href="https://github.com/SANDEEPxKOMMINENI" target="_blank"><i class="fab fa-github"></i></a>
