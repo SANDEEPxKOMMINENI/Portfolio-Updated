@@ -8,9 +8,9 @@ app.get('/', (c) => {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sandeep Kommineni — AI/ML Engineer</title>
-<meta name="description" content="Sandeep Kommineni - AI/ML Engineer building production-grade AI platforms. Expert in Generative AI, LLMs, real-time systems, and full-stack development.">
-<meta property="og:title" content="Sandeep Kommineni — AI/ML Engineer">
+<title>Sandeep Chowdary Kommineni — AI/ML Engineer & Full-Stack Developer</title>
+<meta name="description" content="Sandeep Chowdary Kommineni — AI/ML Engineer building production-grade AI platforms. Expert in Generative AI, LLMs, real-time systems, and full-stack development.">
+<meta property="og:title" content="Sandeep Chowdary Kommineni — AI/ML Engineer">
 <meta property="og:description" content="Building production-grade AI platforms. Expert in GenAI, LLMs, and full-stack development.">
 <meta property="og:image" content="/static/profile.jpg">
 <meta property="og:type" content="website">
@@ -23,6 +23,8 @@ app.get('/', (c) => {
 </head>
 <body>
 
+<!-- Canvas for particle background -->
+<canvas id="particleCanvas"></canvas>
 <div class="noise"></div>
 <div class="blob blob-1"></div>
 <div class="blob blob-2"></div>
@@ -32,7 +34,7 @@ app.get('/', (c) => {
 <nav class="nav" id="nav">
   <div class="nav-container">
     <a href="#" class="nav-logo">
-      <span class="logo-icon">S</span>
+      <span class="logo-icon">SK</span>
       <span class="logo-text">sandeep<span class="logo-dot">.</span></span>
     </a>
     <div class="nav-links" id="navLinks">
@@ -41,6 +43,7 @@ app.get('/', (c) => {
       <a href="#work" class="nav-link">Work</a>
       <a href="#projects" class="nav-link">Projects</a>
       <a href="#skills" class="nav-link">Skills</a>
+      <a href="#certifications" class="nav-link">Credentials</a>
       <a href="#contact" class="nav-link">Contact</a>
     </div>
     <div class="nav-right">
@@ -80,7 +83,16 @@ app.get('/', (c) => {
       <div class="photo-ring"></div>
       <div class="photo-ring ring-2"></div>
       <div class="photo-glow"></div>
-      <img src="/static/profile.jpg" alt="Sandeep Kommineni" class="hero-photo" loading="eager">
+      <!-- Orbiting tech icons -->
+      <div class="orbit-track">
+        <div class="orbit-item" style="--i:0"><i class="fab fa-python"></i></div>
+        <div class="orbit-item" style="--i:1"><i class="fab fa-react"></i></div>
+        <div class="orbit-item" style="--i:2"><i class="fab fa-aws"></i></div>
+        <div class="orbit-item" style="--i:3"><i class="fas fa-brain"></i></div>
+        <div class="orbit-item" style="--i:4"><i class="fab fa-node-js"></i></div>
+        <div class="orbit-item" style="--i:5"><i class="fab fa-docker"></i></div>
+      </div>
+      <img src="/static/profile.jpg" alt="Sandeep Chowdary Kommineni" class="hero-photo" loading="eager">
     </div>
 
     <div class="hero-eyebrow reveal-up d1">
@@ -89,11 +101,11 @@ app.get('/', (c) => {
     </div>
 
     <h1 class="hero-headline reveal-up d2">
-      Hi, I'm <span class="text-gradient">Sandeep.</span>
+      Hi, I'm <span class="text-gradient" id="scrambleText">Sandeep Chowdary Kommineni.</span>
     </h1>
 
     <p class="hero-tagline reveal-up d3">
-      AI/ML Engineer &bull; Full-Stack Developer &bull; GenAI Builder
+      <span class="typewriter" id="typewriter"></span>
     </p>
 
     <p class="hero-sub reveal-up d4">
@@ -106,7 +118,7 @@ app.get('/', (c) => {
         View My Work
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M7 7h10v10"/></svg>
       </a>
-      <a href="https://drive.google.com/file/d/1-_a8XWPrCqR7NvVfdMBV8ragr2U8BfjX/view" target="_blank" class="btn-outline">
+      <a href="https://drive.google.com/file/d/1-_a8XWPrCqR7NvVfdMBV8ragr2U8BfjX/view?usp=sharing" target="_blank" class="btn-outline">
         <i class="fas fa-file-text"></i> Resume
       </a>
       <a href="https://github.com/SANDEEPxKOMMINENI" target="_blank" class="btn-outline">
@@ -116,8 +128,8 @@ app.get('/', (c) => {
 
     <div class="hero-metrics reveal-up d5">
       <div class="metric">
-        <span class="metric-value" data-count="2">0</span>
-        <span class="metric-label">Production Platforms</span>
+        <span class="metric-value" data-count="3">0</span>
+        <span class="metric-label">Production Apps</span>
       </div>
       <div class="metric-divider"></div>
       <div class="metric">
@@ -138,6 +150,40 @@ app.get('/', (c) => {
   </div>
 </section>
 
+<!-- Tech Marquee -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span>Generative AI</span><span class="marquee-dot">&bull;</span>
+    <span>LLMs</span><span class="marquee-dot">&bull;</span>
+    <span>React</span><span class="marquee-dot">&bull;</span>
+    <span>Next.js</span><span class="marquee-dot">&bull;</span>
+    <span>Python</span><span class="marquee-dot">&bull;</span>
+    <span>FastAPI</span><span class="marquee-dot">&bull;</span>
+    <span>AWS</span><span class="marquee-dot">&bull;</span>
+    <span>LiveKit</span><span class="marquee-dot">&bull;</span>
+    <span>OpenAI</span><span class="marquee-dot">&bull;</span>
+    <span>RAG</span><span class="marquee-dot">&bull;</span>
+    <span>Agentic AI</span><span class="marquee-dot">&bull;</span>
+    <span>TypeScript</span><span class="marquee-dot">&bull;</span>
+    <span>Docker</span><span class="marquee-dot">&bull;</span>
+    <span>Transformers</span><span class="marquee-dot">&bull;</span>
+    <span>Computer Vision</span><span class="marquee-dot">&bull;</span>
+    <span>NLP</span><span class="marquee-dot">&bull;</span>
+    <span>Generative AI</span><span class="marquee-dot">&bull;</span>
+    <span>LLMs</span><span class="marquee-dot">&bull;</span>
+    <span>React</span><span class="marquee-dot">&bull;</span>
+    <span>Next.js</span><span class="marquee-dot">&bull;</span>
+    <span>Python</span><span class="marquee-dot">&bull;</span>
+    <span>FastAPI</span><span class="marquee-dot">&bull;</span>
+    <span>AWS</span><span class="marquee-dot">&bull;</span>
+    <span>LiveKit</span><span class="marquee-dot">&bull;</span>
+    <span>OpenAI</span><span class="marquee-dot">&bull;</span>
+    <span>RAG</span><span class="marquee-dot">&bull;</span>
+    <span>Agentic AI</span><span class="marquee-dot">&bull;</span>
+    <span>TypeScript</span><span class="marquee-dot">&bull;</span>
+  </div>
+</div>
+
 <!-- ==================== ABOUT ME ==================== -->
 <section class="section" id="about">
   <div class="section-container">
@@ -149,14 +195,14 @@ app.get('/', (c) => {
     <div class="about-layout">
       <div class="about-photo-col reveal-up">
         <div class="about-photo-card">
-          <img src="/static/profile.jpg" alt="Sandeep Kommineni" class="about-photo">
+          <img src="/static/profile.jpg" alt="Sandeep Chowdary Kommineni" class="about-photo">
           <div class="about-name-card">
-            <strong>Sandeep Kommineni</strong>
+            <strong>Sandeep Chowdary Kommineni</strong>
             <span>AI/ML Engineer</span>
             <div class="about-socials">
-              <a href="https://github.com/SANDEEPxKOMMINENI" target="_blank"><i class="fab fa-github"></i></a>
-              <a href="https://www.linkedin.com/in/sandeep-chowdary-kommineni/" target="_blank"><i class="fab fa-linkedin"></i></a>
-              <a href="mailto:sandeepkommineni2@gmail.com"><i class="fas fa-envelope"></i></a>
+              <a href="https://github.com/SANDEEPxKOMMINENI" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/sandeep-chowdary-kommineni/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="mailto:sandeepkommineni2@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
             </div>
           </div>
         </div>
@@ -167,7 +213,7 @@ app.get('/', (c) => {
           I'm an <strong>AI/ML Engineer</strong> with real-world experience building and deploying production-grade AI platforms. Currently contributing to <strong>TruGen.ai</strong> — a multimodal conversational AI platform — at Truviz, where I work on AI workflows, system architecture, and real-time features using LiveKit and advanced LLMs.
         </p>
         <p class="about-para reveal-up">
-          Previously, I built core features for <strong>MoveLogic.ai</strong> — an AI-powered logistics SaaS serving 1000+ users — at Isoft Technologies. I've also done AI research at <strong>Massey University</strong> (New Zealand), developing domain-specific models and intelligent agent prototypes.
+          Previously, I built core features for <strong>MoveLogic.ai</strong> — an AI-powered logistics SaaS serving 1000+ users — at Isoft Technologies. I've also done AI/ML research at <strong>KL University</strong>, developing domain-specific generative AI models and intelligent agent prototypes.
         </p>
         <p class="about-para reveal-up">
           I'm a <strong>final-year B.Tech student</strong> specializing in AI/ML at KL University (CGPA: 9.0), with 7 industry certifications from AWS, Oracle, Salesforce, and GitHub. Ranked <strong>6th out of 4,500+</strong> at IIT Convolve 3.0 hackathon.
@@ -179,7 +225,7 @@ app.get('/', (c) => {
         <div class="about-quick reveal-up">
           <div class="quick-item">
             <i class="fas fa-map-marker-alt"></i>
-            <span>Hyderabad, India &bull; Open to relocation</span>
+            <span>Hyderabad, Telangana, India &bull; Open to relocation</span>
           </div>
           <div class="quick-item">
             <i class="fas fa-graduation-cap"></i>
@@ -207,9 +253,12 @@ app.get('/', (c) => {
       Where I've<br><span class="text-gradient">made impact.</span>
     </h2>
 
-    <div class="exp-grid">
+    <!-- Timeline wrapper -->
+    <div class="exp-timeline">
+
       <!-- Truviz -->
-      <div class="exp-card reveal-up">
+      <div class="exp-card reveal-up" data-tilt>
+        <div class="exp-timeline-dot current"></div>
         <div class="exp-header">
           <div class="exp-company-info">
             <div class="exp-icon" style="background: linear-gradient(135deg, #6366f1, #8b5cf6);">
@@ -223,7 +272,7 @@ app.get('/', (c) => {
           <div class="exp-meta-right">
             <span class="exp-badge">Current</span>
             <span class="exp-date">Jan 2026 — Present</span>
-            <span class="exp-loc">Remote</span>
+            <span class="exp-loc"><i class="fas fa-map-marker-alt"></i> Remote</span>
           </div>
         </div>
         <ul class="exp-list">
@@ -236,21 +285,22 @@ app.get('/', (c) => {
         </div>
       </div>
 
-      <!-- Massey University -->
-      <div class="exp-card reveal-up">
+      <!-- KL University — Undergraduate Research -->
+      <div class="exp-card reveal-up" data-tilt>
+        <div class="exp-timeline-dot"></div>
         <div class="exp-header">
           <div class="exp-company-info">
             <div class="exp-icon" style="background: linear-gradient(135deg, #06b6d4, #3b82f6);">
               <i class="fas fa-flask"></i>
             </div>
             <div>
-              <h3 class="exp-company">Massey University</h3>
-              <p class="exp-role">AI Research Intern</p>
+              <h3 class="exp-company">KL University</h3>
+              <p class="exp-role">Undergraduate Research Assistant</p>
             </div>
           </div>
           <div class="exp-meta-right">
-            <span class="exp-date">Mar 2025 — Jun 2025</span>
-            <span class="exp-loc">Remote / Auckland, NZ</span>
+            <span class="exp-date">Jun 2025 — Jan 2026</span>
+            <span class="exp-loc"><i class="fas fa-map-marker-alt"></i> Guntur, India</span>
           </div>
         </div>
         <ul class="exp-list">
@@ -264,7 +314,8 @@ app.get('/', (c) => {
       </div>
 
       <!-- Isoft Technologies (MoveLogic.ai) -->
-      <div class="exp-card reveal-up">
+      <div class="exp-card reveal-up" data-tilt>
+        <div class="exp-timeline-dot"></div>
         <div class="exp-header">
           <div class="exp-company-info">
             <div class="exp-icon" style="background: linear-gradient(135deg, #10b981, #059669);">
@@ -272,12 +323,12 @@ app.get('/', (c) => {
             </div>
             <div>
               <h3 class="exp-company">Isoft Technologies (MoveLogic.ai)</h3>
-              <p class="exp-role">Full-Stack AI Engineer</p>
+              <p class="exp-role">Full-Stack AI Developer Intern</p>
             </div>
           </div>
           <div class="exp-meta-right">
             <span class="exp-date">Mar 2025 — Jun 2025</span>
-            <span class="exp-loc">Remote / Auckland, NZ</span>
+            <span class="exp-loc"><i class="fas fa-map-marker-alt"></i> Remote / Auckland, NZ</span>
           </div>
         </div>
         <ul class="exp-list">
@@ -289,6 +340,7 @@ app.get('/', (c) => {
           <span>Next.js</span><span>FastAPI</span><span>Python</span><span>ML</span><span>Cloud</span><span>REST APIs</span>
         </div>
       </div>
+
     </div>
   </div>
 </section>
@@ -296,7 +348,7 @@ app.get('/', (c) => {
 <!-- ==================== PRODUCTION WORK ==================== -->
 <section class="section" id="work">
   <div class="section-container">
-    <div class="section-label reveal-up">Production Work</div>
+    <div class="section-label reveal-up">Industry Projects</div>
     <h2 class="section-heading reveal-up d1">
       Live platforms I've<br><span class="text-gradient">shipped.</span>
     </h2>
@@ -304,7 +356,7 @@ app.get('/', (c) => {
 
     <div class="featured-projects">
 
-      <div class="featured-card reveal-up">
+      <div class="featured-card reveal-up" data-tilt>
         <div class="featured-visual" style="background: linear-gradient(135deg, #6366f1 0%, #a78bfa 100%);">
           <div class="featured-icon"><i class="fas fa-comments"></i></div>
           <div class="featured-badges">
@@ -328,7 +380,7 @@ app.get('/', (c) => {
         </div>
       </div>
 
-      <div class="featured-card featured-reverse reveal-up">
+      <div class="featured-card featured-reverse reveal-up" data-tilt>
         <div class="featured-visual" style="background: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);">
           <div class="featured-icon"><i class="fas fa-truck-moving"></i></div>
           <div class="featured-badges">
@@ -375,7 +427,7 @@ app.get('/', (c) => {
 
     <div class="project-grid">
 
-      <article class="proj-card reveal-up" data-cat="ai fullstack">
+      <article class="proj-card reveal-up" data-cat="ai fullstack" data-tilt>
         <div class="proj-top">
           <div class="proj-icon" style="color:#6366f1;"><i class="fas fa-robot"></i></div>
           <div class="proj-links-top">
@@ -384,11 +436,11 @@ app.get('/', (c) => {
           </div>
         </div>
         <h4>San Vortex AI</h4>
-        <p>Multi-model AI chat platform with 50+ models rivaling GPT-4O. Supabase auth, folder organization, theme customization, and media uploads.</p>
+        <p>Multi-model AI chat platform with 50+ models. Supabase auth, folder organization, theme customization, and media uploads.</p>
         <div class="proj-tags"><span>React</span><span>Supabase</span><span>OpenRouter</span><span>GenAI</span></div>
       </article>
 
-      <article class="proj-card reveal-up" data-cat="ai fullstack">
+      <article class="proj-card reveal-up" data-cat="ai fullstack" data-tilt>
         <div class="proj-top">
           <div class="proj-icon" style="color:#06b6d4;"><i class="fas fa-language"></i></div>
           <div class="proj-links-top">
@@ -400,7 +452,7 @@ app.get('/', (c) => {
         <div class="proj-tags"><span>AI/ML</span><span>NLP</span><span>TTS</span><span>Python</span></div>
       </article>
 
-      <article class="proj-card reveal-up" data-cat="ai">
+      <article class="proj-card reveal-up" data-cat="ai" data-tilt>
         <div class="proj-top">
           <div class="proj-icon" style="color:#f59e0b;"><i class="fas fa-file-pdf"></i></div>
           <div class="proj-links-top">
@@ -412,7 +464,7 @@ app.get('/', (c) => {
         <div class="proj-tags"><span>RAG</span><span>NLP</span><span>LLM</span><span>Semantic Search</span></div>
       </article>
 
-      <article class="proj-card reveal-up" data-cat="ai">
+      <article class="proj-card reveal-up" data-cat="ai" data-tilt>
         <div class="proj-top">
           <div class="proj-icon" style="color:#10b981;"><i class="fas fa-chart-line"></i></div>
           <div class="proj-links-top">
@@ -424,7 +476,7 @@ app.get('/', (c) => {
         <div class="proj-tags"><span>Transformer</span><span>Deep Learning</span><span>Gradio</span></div>
       </article>
 
-      <article class="proj-card reveal-up" data-cat="ai hackathon">
+      <article class="proj-card reveal-up" data-cat="ai hackathon" data-tilt>
         <div class="proj-top">
           <div class="proj-icon" style="color:#eab308;"><i class="fas fa-trophy"></i></div>
           <div class="proj-links-top">
@@ -436,7 +488,7 @@ app.get('/', (c) => {
         <div class="proj-tags"><span>ML</span><span>Python</span><span>Feature Eng.</span></div>
       </article>
 
-      <article class="proj-card reveal-up" data-cat="ai hackathon">
+      <article class="proj-card reveal-up" data-cat="ai hackathon" data-tilt>
         <div class="proj-top">
           <div class="proj-icon" style="color:#f97316;"><i class="fab fa-amazon"></i></div>
           <div class="proj-links-top">
@@ -448,7 +500,7 @@ app.get('/', (c) => {
         <div class="proj-tags"><span>Computer Vision</span><span>LightGBM</span><span>Deep Learning</span></div>
       </article>
 
-      <article class="proj-card reveal-up" data-cat="fullstack">
+      <article class="proj-card reveal-up" data-cat="fullstack" data-tilt>
         <div class="proj-top">
           <div class="proj-icon" style="color:#ec4899;"><i class="fas fa-play-circle"></i></div>
           <div class="proj-links-top">
@@ -460,7 +512,7 @@ app.get('/', (c) => {
         <div class="proj-tags"><span>React</span><span>Node.js</span><span>MongoDB</span><span>ML</span></div>
       </article>
 
-      <article class="proj-card reveal-up" data-cat="ai">
+      <article class="proj-card reveal-up" data-cat="ai" data-tilt>
         <div class="proj-top">
           <div class="proj-icon" style="color:#14b8a6;"><i class="fas fa-sitemap"></i></div>
           <div class="proj-links-top">
@@ -472,7 +524,7 @@ app.get('/', (c) => {
         <div class="proj-tags"><span>AI Agents</span><span>LLM</span><span>Python</span></div>
       </article>
 
-      <article class="proj-card reveal-up" data-cat="fullstack">
+      <article class="proj-card reveal-up" data-cat="fullstack" data-tilt>
         <div class="proj-top">
           <div class="proj-icon" style="color:#f43f5e;"><i class="fas fa-link"></i></div>
           <div class="proj-links-top">
@@ -480,11 +532,11 @@ app.get('/', (c) => {
           </div>
         </div>
         <h4>AWS Serverless URL Shortener</h4>
-        <p>Modern URL shortener with React, TypeScript, AWS Lambda, DynamoDB, and API Gateway. Instant shortening with serverless arch.</p>
+        <p>Modern URL shortener with React, TypeScript, AWS Lambda, DynamoDB, and API Gateway. Instant shortening with serverless architecture.</p>
         <div class="proj-tags"><span>AWS Lambda</span><span>DynamoDB</span><span>React</span><span>TypeScript</span></div>
       </article>
 
-      <article class="proj-card reveal-up" data-cat="fullstack">
+      <article class="proj-card reveal-up" data-cat="fullstack" data-tilt>
         <div class="proj-top">
           <div class="proj-icon" style="color:#84cc16;"><i class="fas fa-clipboard-list"></i></div>
           <div class="proj-links-top">
@@ -497,7 +549,7 @@ app.get('/', (c) => {
         <div class="proj-tags"><span>React</span><span>Supabase</span><span>Zustand</span></div>
       </article>
 
-      <article class="proj-card reveal-up" data-cat="fullstack">
+      <article class="proj-card reveal-up" data-cat="fullstack" data-tilt>
         <div class="proj-top">
           <div class="proj-icon" style="color:#22c55e;"><i class="fas fa-leaf"></i></div>
           <div class="proj-links-top">
@@ -507,18 +559,6 @@ app.get('/', (c) => {
         <h4>Sustainable Living Platform</h4>
         <p>Comprehensive web platform promoting sustainable living with educational resources and data visualization tools.</p>
         <div class="proj-tags"><span>React</span><span>Express</span><span>Firebase</span></div>
-      </article>
-
-      <article class="proj-card reveal-up" data-cat="fullstack">
-        <div class="proj-top">
-          <div class="proj-icon" style="color:#3b82f6;"><i class="fas fa-university"></i></div>
-          <div class="proj-links-top">
-            <a href="https://github.com/SANDEEPxKOMMINENI/forage-midas" target="_blank"><i class="fab fa-github"></i></a>
-          </div>
-        </div>
-        <h4>JPMC Software Engineering</h4>
-        <p>JP Morgan Chase Advanced Software Engineering virtual program. Guidance for JPMC fresher and intern roles.</p>
-        <div class="proj-tags"><span>Python</span><span>Finance</span><span>SWE</span></div>
       </article>
 
     </div>
@@ -534,7 +574,7 @@ app.get('/', (c) => {
     </h2>
 
     <div class="skills-grid">
-      <div class="skill-block reveal-up">
+      <div class="skill-block reveal-up" data-tilt>
         <div class="skill-header">
           <div class="skill-icon"><i class="fas fa-brain"></i></div>
           <h3>AI & ML</h3>
@@ -546,7 +586,7 @@ app.get('/', (c) => {
         </div>
       </div>
 
-      <div class="skill-block reveal-up">
+      <div class="skill-block reveal-up" data-tilt>
         <div class="skill-header">
           <div class="skill-icon"><i class="fas fa-bolt"></i></div>
           <h3>Real-time & Conversational</h3>
@@ -557,7 +597,7 @@ app.get('/', (c) => {
         </div>
       </div>
 
-      <div class="skill-block reveal-up">
+      <div class="skill-block reveal-up" data-tilt>
         <div class="skill-header">
           <div class="skill-icon"><i class="fas fa-code"></i></div>
           <h3>Full-Stack</h3>
@@ -569,7 +609,7 @@ app.get('/', (c) => {
         </div>
       </div>
 
-      <div class="skill-block reveal-up">
+      <div class="skill-block reveal-up" data-tilt>
         <div class="skill-header">
           <div class="skill-icon"><i class="fas fa-cloud"></i></div>
           <h3>Cloud & Infrastructure</h3>
@@ -581,7 +621,7 @@ app.get('/', (c) => {
         </div>
       </div>
 
-      <div class="skill-block reveal-up">
+      <div class="skill-block reveal-up" data-tilt>
         <div class="skill-header">
           <div class="skill-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
           <h3>AI Tools & APIs</h3>
@@ -593,7 +633,7 @@ app.get('/', (c) => {
         </div>
       </div>
 
-      <div class="skill-block reveal-up">
+      <div class="skill-block reveal-up" data-tilt>
         <div class="skill-header">
           <div class="skill-icon"><i class="fas fa-vial"></i></div>
           <h3>Testing & Quality</h3>
@@ -607,77 +647,119 @@ app.get('/', (c) => {
   </div>
 </section>
 
+<!-- ==================== OPEN SOURCE ==================== -->
+<section class="section section-alt" id="opensource">
+  <div class="section-container">
+    <div class="section-label reveal-up">Open Source</div>
+    <h2 class="section-heading reveal-up d1">
+      Community<br><span class="text-gradient">contributions.</span>
+    </h2>
+    <div class="os-stats reveal-up">
+      <div class="os-stat">
+        <div class="os-stat-value">350+</div>
+        <div class="os-stat-label">Commits / Year</div>
+      </div>
+      <div class="os-stat">
+        <div class="os-stat-value">2</div>
+        <div class="os-stat-label">Major Contributions</div>
+      </div>
+    </div>
+    <div class="os-cards">
+      <a href="https://github.com/n8n-io/n8n" target="_blank" class="os-card reveal-up" data-tilt>
+        <div class="os-card-icon"><i class="fas fa-project-diagram"></i></div>
+        <div class="os-card-info">
+          <h4>n8n</h4>
+          <p>Workflow orchestration automations — contributed to the open-source workflow automation platform</p>
+        </div>
+        <i class="fas fa-arrow-up-right-from-square os-card-arrow"></i>
+      </a>
+      <a href="https://github.com/mendableai/firecrawl" target="_blank" class="os-card reveal-up" data-tilt>
+        <div class="os-card-icon"><i class="fas fa-fire"></i></div>
+        <div class="os-card-info">
+          <h4>Firecrawl</h4>
+          <p>LLM-powered data pipelines — contributed to intelligent web crawling for AI applications</p>
+        </div>
+        <i class="fas fa-arrow-up-right-from-square os-card-arrow"></i>
+      </a>
+    </div>
+    <!-- GitHub contribution graph placeholder -->
+    <div class="github-embed reveal-up">
+      <img src="https://ghchart.rshah.org/6366f1/SANDEEPxKOMMINENI" alt="Sandeep's GitHub Contribution Graph" class="github-graph" loading="lazy">
+    </div>
+  </div>
+</section>
+
 <!-- ==================== CERTIFICATIONS ==================== -->
-<section class="section section-alt" id="certifications">
+<section class="section" id="certifications">
   <div class="section-container">
     <div class="section-label reveal-up">Credentials</div>
     <h2 class="section-heading reveal-up d1">
       Industry<br><span class="text-gradient">certified.</span>
     </h2>
 
-    <div class="certs-track">
-      <div class="cert-item reveal-up">
+    <div class="certs-grid">
+      <div class="cert-item reveal-up" data-tilt>
         <div class="cert-icon"><i class="fab fa-aws"></i></div>
         <div class="cert-info">
           <h4>AWS Cloud Practitioner</h4>
           <span>Amazon Web Services &bull; 2024–2027</span>
         </div>
-        <a href="https://drive.google.com/file/d/1T7DKd0PekARgeUCDnHt3oroFTMUzFoj5/view" target="_blank" class="cert-view"><i class="fas fa-arrow-up-right-from-square"></i></a>
+        <a href="https://drive.google.com/file/d/1T7DKd0PekARgeUCDnHt3oroFTMUzFoj5/view?usp=sharing" target="_blank" class="cert-view"><i class="fas fa-arrow-up-right-from-square"></i></a>
       </div>
-      <div class="cert-item reveal-up">
+      <div class="cert-item reveal-up" data-tilt>
         <div class="cert-icon"><i class="fas fa-cloud"></i></div>
         <div class="cert-info">
           <h4>OCI Architect Associate</h4>
           <span>Oracle &bull; 2025–2028</span>
         </div>
-        <a href="https://drive.google.com/file/d/1teGaotHcjOpdqRU7RJS4rwZBGidbeOWa/view" target="_blank" class="cert-view"><i class="fas fa-arrow-up-right-from-square"></i></a>
+        <a href="https://drive.google.com/file/d/1teGaotHcjOpdqRU7RJS4rwZBGidbeOWa/view?usp=sharing" target="_blank" class="cert-view"><i class="fas fa-arrow-up-right-from-square"></i></a>
       </div>
-      <div class="cert-item reveal-up">
+      <div class="cert-item reveal-up" data-tilt>
         <div class="cert-icon"><i class="fas fa-microchip"></i></div>
         <div class="cert-info">
           <h4>OCI AI Foundations Associate</h4>
           <span>Oracle &bull; 2025–2028</span>
         </div>
-        <a href="https://drive.google.com/file/d/1t51xfBT_0-yfwV7_-HmzK_JEX4pCGyMa/view" target="_blank" class="cert-view"><i class="fas fa-arrow-up-right-from-square"></i></a>
+        <a href="https://drive.google.com/file/d/1t51xfBT_0-yfwV7_-HmzK_JEX4pCGyMa/view?usp=sharing" target="_blank" class="cert-view"><i class="fas fa-arrow-up-right-from-square"></i></a>
       </div>
-      <div class="cert-item reveal-up">
+      <div class="cert-item reveal-up" data-tilt>
         <div class="cert-icon"><i class="fab fa-salesforce"></i></div>
         <div class="cert-info">
           <h4>Salesforce AI Associate</h4>
           <span>Salesforce &bull; 2024–2027</span>
         </div>
-        <a href="https://drive.google.com/file/d/1qVV4Z0PPHPe0VI1h_GSKCxmSa9JuY4YZ/view" target="_blank" class="cert-view"><i class="fas fa-arrow-up-right-from-square"></i></a>
+        <a href="https://drive.google.com/file/d/1qVV4Z0PPHPe0VI1h_GSKCxmSa9JuY4YZ/view?usp=sharing" target="_blank" class="cert-view"><i class="fas fa-arrow-up-right-from-square"></i></a>
       </div>
-      <div class="cert-item reveal-up">
+      <div class="cert-item reveal-up" data-tilt>
         <div class="cert-icon"><i class="fab fa-github"></i></div>
         <div class="cert-info">
           <h4>GitHub Foundations</h4>
           <span>GitHub &bull; 2025–2028</span>
         </div>
-        <a href="https://drive.google.com/file/d/1HEhn7S0fIuqUVg6dRxutCRRRQEMDdOvS/view" target="_blank" class="cert-view"><i class="fas fa-arrow-up-right-from-square"></i></a>
+        <a href="https://drive.google.com/file/d/1HEhn7S0fIuqUVg6dRxutCRRRQEMDdOvS/view?usp=sharing" target="_blank" class="cert-view"><i class="fas fa-arrow-up-right-from-square"></i></a>
       </div>
-      <div class="cert-item reveal-up">
+      <div class="cert-item reveal-up" data-tilt>
         <div class="cert-icon"><i class="fas fa-robot"></i></div>
         <div class="cert-info">
           <h4>Automation Essentials Professional</h4>
           <span>Automation Anywhere &bull; 2025–2028</span>
         </div>
-        <a href="https://drive.google.com/file/d/1BqLjdQCOK8Z4rpkE9K4k-B_Bi3VBbSwB/view" target="_blank" class="cert-view"><i class="fas fa-arrow-up-right-from-square"></i></a>
+        <a href="https://drive.google.com/file/d/1BqLjdQCOK8Z4rpkE9K4k-B_Bi3VBbSwB/view?usp=sharing" target="_blank" class="cert-view"><i class="fas fa-arrow-up-right-from-square"></i></a>
       </div>
-      <div class="cert-item reveal-up">
+      <div class="cert-item reveal-up" data-tilt>
         <div class="cert-icon"><i class="fab fa-java"></i></div>
         <div class="cert-info">
           <h4>Java Full Stack — Digital Skills</h4>
           <span>TalentNext (Wipro) &bull; 2024</span>
         </div>
-        <a href="https://drive.google.com/file/d/1VNF4LbROBZIycB-QWPGNrwXPRcGuht4I/view" target="_blank" class="cert-view"><i class="fas fa-arrow-up-right-from-square"></i></a>
+        <a href="https://drive.google.com/file/d/1VNF4LbROBZIycB-QWPGNrwXPRcGuht4I/view?usp=sharing" target="_blank" class="cert-view"><i class="fas fa-arrow-up-right-from-square"></i></a>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ==================== EDUCATION ==================== -->
-<section class="section" id="education">
+<section class="section section-alt" id="education">
   <div class="section-container">
     <div class="section-label reveal-up">Education</div>
     <h2 class="section-heading reveal-up d1">
@@ -685,27 +767,27 @@ app.get('/', (c) => {
     </h2>
     <div class="edu-list">
       <div class="edu-item reveal-up">
-        <div class="edu-year">2022–2026</div>
+        <div class="edu-year">Mar 2022 — Mar 2026</div>
         <div class="edu-content">
           <h3>KL University</h3>
-          <p class="edu-degree">B.Tech — Computer Science & Engineering (AI & ML)</p>
+          <p class="edu-degree">B.Tech — Computer Science & Engineering (Specialization: AI & ML)</p>
           <p class="edu-detail">CGPA: 9.0/10 &bull; Top 15% ranking &bull; Vaddeswaram, Andhra Pradesh</p>
         </div>
       </div>
       <div class="edu-item reveal-up">
-        <div class="edu-year">2020–2022</div>
+        <div class="edu-year">2020 — 2022</div>
         <div class="edu-content">
           <h3>Sri Chaitanya Junior College</h3>
-          <p class="edu-degree">Intermediate — MPC (Math, Physics, Chemistry)</p>
-          <p class="edu-detail">CPI: 7.3/10 &bull; Guntur, Andhra Pradesh</p>
+          <p class="edu-degree">Senior Secondary Education (12th Grade, HSC — PCM)</p>
+          <p class="edu-detail">CPI: 7.3/10 &bull; Lakshmipuram, Guntur, Andhra Pradesh</p>
         </div>
       </div>
       <div class="edu-item reveal-up">
-        <div class="edu-year">2019–2020</div>
+        <div class="edu-year">2019 — 2020</div>
         <div class="edu-content">
           <h3>Bhashyam IIT Main Campus</h3>
-          <p class="edu-degree">Class 10 — SSC, AP Board</p>
-          <p class="edu-detail">CPI: 9.8/10 &bull; Guntur, Andhra Pradesh</p>
+          <p class="edu-degree">Secondary Education (10th Grade, SSC — AP Board)</p>
+          <p class="edu-detail">CPI: 9.8/10 &bull; Lakshmipuram, Guntur, Andhra Pradesh</p>
         </div>
       </div>
     </div>
@@ -713,7 +795,7 @@ app.get('/', (c) => {
 </section>
 
 <!-- ==================== CONTACT ==================== -->
-<section class="section section-alt" id="contact">
+<section class="section" id="contact">
   <div class="section-container contact-section">
     <div class="section-label reveal-up">Contact</div>
     <h2 class="section-heading reveal-up d1">
@@ -732,7 +814,7 @@ app.get('/', (c) => {
         <i class="fas fa-phone"></i>
         <span>+91 9573456001</span>
       </a>
-      <a href="https://www.linkedin.com/in/sandeep-chowdary-kommineni/" target="_blank" class="contact-card reveal-up">
+      <a href="https://www.linkedin.com/in/sandeep-chowdary-kommineni/?profileId=ACoAAD-K9BgBeyuX5F1fPz-X0LijRwW6WLH3l0" target="_blank" class="contact-card reveal-up">
         <i class="fab fa-linkedin"></i>
         <span>LinkedIn</span>
       </a>
@@ -753,12 +835,13 @@ app.get('/', (c) => {
   <div class="footer-container">
     <div class="footer-left">
       <span class="footer-logo">sandeep<span class="logo-dot">.</span></span>
-      <span class="footer-copy">&copy; 2026 Sandeep Kommineni. Built with passion.</span>
+      <span class="footer-copy">&copy; 2026 Sandeep Chowdary Kommineni. Crafted with passion.</span>
     </div>
     <div class="footer-right">
-      <a href="https://github.com/SANDEEPxKOMMINENI" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/sandeep-chowdary-kommineni/" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="mailto:sandeepkommineni2@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://github.com/SANDEEPxKOMMINENI" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/sandeep-chowdary-kommineni/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:sandeepkommineni2@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://drive.google.com/file/d/1-_a8XWPrCqR7NvVfdMBV8ragr2U8BfjX/view?usp=sharing" target="_blank" aria-label="Resume"><i class="fas fa-file-text"></i></a>
     </div>
   </div>
 </footer>
