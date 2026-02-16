@@ -100,7 +100,7 @@ app.get('/', (c) => {
     </p>
 
     <p class="hero-sub reveal-up d4">
-      Building production-grade AI platforms at <strong>TruGen.ai</strong> and <strong>MoveLogic.ai</strong>.<br>
+      Building production-grade AI platforms at <strong>TruGen.AI</strong> and <strong>MoveLogic.ai</strong>.<br>
       Expert in Generative AI, LLMs, real-time systems, and scalable full-stack applications.
     </p>
 
@@ -201,7 +201,7 @@ app.get('/', (c) => {
 
       <div class="about-text-col">
         <p class="about-para reveal-up">
-          I'm an <strong>AI/ML Engineer</strong> with real-world experience building and deploying production-grade AI platforms. Currently contributing to <strong>TruGen.ai</strong> — a multimodal conversational AI platform — at Truviz, where I work on AI workflows, system architecture, and real-time features using LiveKit and advanced LLMs.
+          I'm an <strong>AI/ML Engineer</strong> with real-world experience building and deploying production-grade AI platforms. Currently contributing to <strong>TruGen.AI</strong> — a multimodal conversational AI platform — at Truviz.AI, where I work on AI workflows, system architecture, and real-time features using LiveKit and advanced LLMs.
         </p>
         <p class="about-para reveal-up">
           Previously, I built core features for <strong>MoveLogic.ai</strong> — an AI-powered logistics SaaS serving 1000+ users — at Isoft Technologies. I've also done AI/ML research at <strong>KL University</strong>, developing domain-specific generative AI models and intelligent agent prototypes.
@@ -256,7 +256,7 @@ app.get('/', (c) => {
               <i class="fas fa-brain"></i>
             </div>
             <div>
-              <h3 class="exp-company">Truviz (TruGen.ai)</h3>
+              <h3 class="exp-company">Truviz.AI (TruGen.AI)</h3>
               <p class="exp-role">AI/ML Engineer</p>
             </div>
           </div>
@@ -267,7 +267,7 @@ app.get('/', (c) => {
           </div>
         </div>
         <ul class="exp-list">
-          <li>Contributed to TruGen.ai platform development, focusing on AI workflows, system architecture, and real-world product delivery</li>
+          <li>Contributed to TruGen.AI platform development, focusing on AI workflows, system architecture, and real-world product delivery</li>
           <li>Conducted comprehensive end-to-end testing of live platform, identifying & resolving bugs, performance bottlenecks, and UX issues</li>
           <li>Explored & evaluated LiveKit for real-time communication and multimodal AI integration in production environment</li>
         </ul>
@@ -352,13 +352,13 @@ app.get('/', (c) => {
           <div class="featured-icon"><i class="fas fa-comments"></i></div>
           <div class="featured-badges">
             <span class="f-badge live-badge"><span class="live-dot"></span> Live</span>
-            <span class="f-badge">@ Truviz</span>
+            <span class="f-badge">@ Truviz.AI</span>
           </div>
         </div>
         <div class="featured-body">
           <div class="featured-top">
             <span class="featured-label">Company Product &bull; 2026</span>
-            <h3>TruGen.ai</h3>
+            <h3>TruGen.AI</h3>
             <p class="featured-subtitle">Multimodal Conversational AI Platform</p>
           </div>
           <p>Real-time multimodal AI system built with LiveKit, OpenAI, Groq, and cloud infrastructure. Features agentic & context-aware AI capabilities for advanced conversational agents. Currently in active development as an AI/ML Engineer.</p>
@@ -366,7 +366,7 @@ app.get('/', (c) => {
             <span>LiveKit</span><span>OpenAI</span><span>Groq</span><span>Multimodal AI</span><span>Agentic AI</span><span>Cloud</span>
           </div>
           <div class="featured-links">
-            <a href="https://trugen.ai" target="_blank" class="f-link-primary"><i class="fas fa-external-link-alt"></i> Visit TruGen.ai</a>
+            <a href="https://TruGen.AI" target="_blank" class="f-link-primary"><i class="fas fa-external-link-alt"></i> Visit TruGen.AI</a>
           </div>
         </div>
       </div>
