@@ -216,7 +216,7 @@ app.get('/', (c) => {
         <div class="about-quick reveal-up">
           <div class="quick-item">
             <i class="fas fa-map-marker-alt"></i>
-            <span>Hyderabad, Telangana, India &bull; Open to relocation</span>
+            <span>Guntur, Andhra Pradesh, India &bull; Open to relocation</span>
           </div>
           <div class="quick-item">
             <i class="fas fa-graduation-cap"></i>
@@ -816,7 +816,7 @@ app.get('/', (c) => {
     </div>
     <div class="contact-location reveal-up">
       <i class="fas fa-map-marker-alt"></i>
-      Hyderabad, Telangana, India &bull; Available for relocation
+      Guntur, Andhra Pradesh, India &bull; Available for relocation
     </div>
   </div>
 </section>
