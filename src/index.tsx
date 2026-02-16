@@ -8,9 +8,9 @@ app.get('/', (c) => {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sandeep Chowdary Kommineni — AI/ML Engineer & Full-Stack Developer</title>
-<meta name="description" content="Sandeep Chowdary Kommineni — AI/ML Engineer building production-grade AI platforms. Expert in Generative AI, LLMs, real-time systems, and full-stack development.">
-<meta property="og:title" content="Sandeep Chowdary Kommineni — AI/ML Engineer">
+<title>Sandeep Kommineni — AI/ML Engineer & Full-Stack Developer</title>
+<meta name="description" content="Sandeep Kommineni — AI/ML Engineer building production-grade AI platforms. Expert in Generative AI, LLMs, real-time systems, and full-stack development.">
+<meta property="og:title" content="Sandeep Kommineni — AI/ML Engineer">
 <meta property="og:description" content="Building production-grade AI platforms. Expert in GenAI, LLMs, and full-stack development.">
 <meta property="og:image" content="/static/profile.jpg">
 <meta property="og:type" content="website">
@@ -35,7 +35,7 @@ app.get('/', (c) => {
   <div class="nav-container">
     <a href="#" class="nav-logo">
       <span class="logo-icon">SK</span>
-      <span class="logo-text">sandeep<span class="logo-dot">.</span></span>
+      <span class="logo-text">Sandeep Kommineni<span class="logo-dot">.</span></span>
     </a>
     <div class="nav-links" id="navLinks">
       <a href="#about" class="nav-link">About</a>
@@ -83,7 +83,7 @@ app.get('/', (c) => {
       <div class="photo-ring"></div>
       <div class="photo-ring ring-2"></div>
       <div class="photo-glow"></div>
-            <img src="/static/profile.jpg" alt="Sandeep Chowdary Kommineni" class="hero-photo" loading="eager">
+            <img src="/static/profile.jpg" alt="Sandeep Kommineni" class="hero-photo" loading="eager">
     </div>
 
     <div class="hero-eyebrow reveal-up d1">
@@ -92,7 +92,7 @@ app.get('/', (c) => {
     </div>
 
     <h1 class="hero-headline reveal-up d2">
-      Hi, I'm <span class="text-gradient" id="scrambleText">Sandeep Chowdary Kommineni.</span>
+      Hi, I'm <span class="text-gradient" id="scrambleText">Sandeep Kommineni.</span>
     </h1>
 
     <p class="hero-tagline reveal-up d3">
@@ -186,9 +186,9 @@ app.get('/', (c) => {
     <div class="about-layout">
       <div class="about-photo-col reveal-up">
         <div class="about-photo-card">
-          <img src="/static/profile.jpg" alt="Sandeep Chowdary Kommineni" class="about-photo">
+          <img src="/static/profile.jpg" alt="Sandeep Kommineni" class="about-photo">
           <div class="about-name-card">
-            <strong>Sandeep Chowdary Kommineni</strong>
+            <strong>Sandeep Kommineni</strong>
             <span>AI/ML Engineer</span>
             <div class="about-socials">
               <a href="https://github.com/SANDEEPxKOMMINENI" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
@@ -826,7 +826,7 @@ app.get('/', (c) => {
   <div class="footer-container">
     <div class="footer-left">
       <span class="footer-logo">sandeep<span class="logo-dot">.</span></span>
-      <span class="footer-copy">&copy; 2026 Sandeep Chowdary Kommineni. Crafted with passion.</span>
+      <span class="footer-copy">&copy; 2026 Sandeep Kommineni. Crafted with passion.</span>
     </div>
     <div class="footer-right">
       <a href="https://github.com/SANDEEPxKOMMINENI" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
