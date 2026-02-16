@@ -218,16 +218,16 @@ button { font-family: var(--font); }
 
 /* Hero Photo */
 .hero-photo-wrap {
-  position: relative; width: 180px; height: 180px; margin-bottom: 32px;
+  position: relative; width: 280px; height: 280px; margin-bottom: 32px;
 }
 .hero-photo {
-  width: 100%; height: 100%; border-radius: 50%; object-fit: cover;
+  width: 100%; height: 100%; border-radius: 8px; object-fit: cover;
   position: relative; z-index: 3;
   border: 3px solid rgba(255,255,255,0.1);
   box-shadow: 0 8px 40px rgba(0,0,0,0.3);
 }
 .photo-ring {
-  position: absolute; inset: -12px; border-radius: 50%;
+  position: absolute; inset: -12px; border-radius: 8px;
   border: 1.5px solid rgba(99,102,241,0.35);
   animation: ringRotate 10s linear infinite; z-index: 1;
 }
@@ -850,7 +850,7 @@ button { font-family: var(--font); }
   .burger { display: flex; }
   .hero { padding-top: calc(var(--nav-h) + 40px); }
   .hero-headline { font-size: clamp(2.2rem, 8vw, 3.2rem); }
-  .hero-photo-wrap { width: 120px; height: 120px; }
+  .hero-photo-wrap { width: 200px; height: 200px; }
   .orbit-track { display: none; }
   .hero-metrics { flex-wrap: wrap; justify-content: center; gap: 16px; }
   .metric-divider { display: none; }

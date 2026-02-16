@@ -83,16 +83,7 @@ app.get('/', (c) => {
       <div class="photo-ring"></div>
       <div class="photo-ring ring-2"></div>
       <div class="photo-glow"></div>
-      <!-- Orbiting tech icons -->
-      <div class="orbit-track">
-        <div class="orbit-item" style="--i:0"><i class="fab fa-python"></i></div>
-        <div class="orbit-item" style="--i:1"><i class="fab fa-react"></i></div>
-        <div class="orbit-item" style="--i:2"><i class="fab fa-aws"></i></div>
-        <div class="orbit-item" style="--i:3"><i class="fas fa-brain"></i></div>
-        <div class="orbit-item" style="--i:4"><i class="fab fa-node-js"></i></div>
-        <div class="orbit-item" style="--i:5"><i class="fab fa-docker"></i></div>
-      </div>
-      <img src="/static/profile.jpg" alt="Sandeep Chowdary Kommineni" class="hero-photo" loading="eager">
+            <img src="/static/profile.jpg" alt="Sandeep Chowdary Kommineni" class="hero-photo" loading="eager">
     </div>
 
     <div class="hero-eyebrow reveal-up d1">
