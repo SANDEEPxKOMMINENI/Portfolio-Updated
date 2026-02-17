@@ -906,7 +906,7 @@ ${educationSchema}
       <a href="https://github.com/SANDEEPxKOMMINENI" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
       <a href="https://www.linkedin.com/in/sandeep-chowdary-kommineni/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
       <a href="mailto:sandeepkommineni2@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-      <a href="https://drive.google.com/file/d/1-_a8XWPrCqR7NvVfdMBV8ragr2U8BfjX/view?usp=sharing" target="_blank" aria-label="Resume"><i class="fas fa-file-text"></i></a>
+      <a href="https://drive.google.com/file/d/17Vf91MFwQQAjIOJSUgedDYGPQMMU5m2Z/view?usp=sharing" target="_blank" aria-label="Resume"><i class="fas fa-file-text"></i></a>
     </div>
   </div>
 </footer>
