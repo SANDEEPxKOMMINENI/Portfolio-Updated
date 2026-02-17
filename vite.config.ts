@@ -14,6 +14,27 @@ export default defineConfig({
     })
   ],
   build: {
-    outDir: 'dist'
+    outDir: 'dist',
+    minify: 'esbuild',
+    cssMinify: true,
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+        assetFileNames: 'assets/[name]-[hash][extname]',
+        chunkFileNames: 'assets/[name]-[hash].js',
+        entryFileNames: 'assets/[name]-[hash].js'
+      }
+    },
+    // Ensure static assets are copied and minified
+    copyPublicDir: true
+  },
+  css: {
+    postcss: {
+      plugins: []
+    }
+  },
+  test: {
+    globals: true,
+    environment: 'node'
   }
 })

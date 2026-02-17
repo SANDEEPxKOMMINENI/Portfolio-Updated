@@ -380,3 +380,135 @@
   skillBlocks.forEach(el => skillIO.observe(el));
 
 })();
+
+/* ========================================
+   ANALYTICS INTEGRATION
+   Google Analytics 4 with Privacy Controls
+   ======================================== */
+
+/**
+ * Check if Do Not Track (DNT) is enabled
+ */
+function isDNTEnabled() {
+  const dnt = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+  return dnt === "1" || dnt === "yes";
+}
+
+/**
+ * Track custom event
+ */
+function trackEvent(eventName, eventCategory, eventLabel, eventValue, customParameters) {
+  if (isDNTEnabled()) return;
+  
+  if (typeof window !== "undefined" && window.gtag) {
+    window.gtag("event", eventName, {
+      event_category: eventCategory,
+      event_label: eventLabel,
+      value: eventValue,
+      ...customParameters
+    });
+  }
+}
+
+/**
+ * Track button clicks
+ */
+function trackButtonClicks() {
+  document.querySelectorAll(".btn-primary, .btn-outline, .nav-cta").forEach((button) => {
+    button.addEventListener("click", (e) => {
+      const target = e.currentTarget;
+      const buttonText = target.textContent?.trim() || "Unknown Button";
+      
+      trackEvent("button_click", "engagement", buttonText);
+    });
+  });
+
+  document.querySelectorAll(".proj-card, .featured-card").forEach((card) => {
+    card.addEventListener("click", (e) => {
+      const target = e.currentTarget;
+      const projectName = target.querySelector("h3")?.textContent?.trim() || "Unknown Project";
+      
+      trackEvent("project_view", "engagement", projectName);
+    });
+  });
+
+  document.querySelectorAll(".contact-card").forEach((card) => {
+    card.addEventListener("click", (e) => {
+      const target = e.currentTarget;
+      const contactType = target.textContent?.trim() || "Unknown Contact";
+      
+      trackEvent("contact_click", "engagement", contactType);
+    });
+  });
+}
+
+/**
+ * Track section views using Intersection Observer
+ */
+function trackSectionViews() {
+  const sections = document.querySelectorAll("section[id]");
+  const observedSections = new Set();
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+          const sectionId = entry.target.id;
+          
+          if (!observedSections.has(sectionId)) {
+            observedSections.add(sectionId);
+            trackEvent("section_view", "engagement", sectionId);
+          }
+        }
+      });
+    },
+    {
+      threshold: 0.5
+    }
+  );
+
+  sections.forEach((section) => observer.observe(section));
+}
+
+/**
+ * Track external link clicks
+ */
+function trackExternalLinks() {
+  document.querySelectorAll("a[href^='http']").forEach((link) => {
+    link.addEventListener("click", (e) => {
+      const target = e.currentTarget;
+      const href = target.href;
+      const hostname = new URL(href).hostname;
+      
+      if (hostname !== window.location.hostname) {
+        trackEvent("external_link_click", "outbound", href);
+      }
+    });
+  });
+}
+
+/**
+ * Initialize analytics tracking
+ */
+function initializeAnalytics() {
+  if (isDNTEnabled()) {
+    console.log("[Analytics] Tracking disabled (DNT enabled)");
+    return;
+  }
+
+  // Track button clicks
+  trackButtonClicks();
+  
+  // Track section views
+  trackSectionViews();
+  
+  // Track external links
+  trackExternalLinks();
+}
+
+// Initialize analytics when DOM is ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initializeAnalytics);
+} else {
+  initializeAnalytics();
+}

@@ -1,0 +1,2 @@
+# Redirect www subdomain to apex domain
+https://www.sandeepkommineni.me/* https://sandeepkommineni.me/:splat 301!
