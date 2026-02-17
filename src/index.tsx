@@ -182,7 +182,7 @@ ${educationSchema}
         View Production AI Projects
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M7 7h10v10"/></svg>
       </a>
-      <a href="https://drive.google.com/file/d/1-_a8XWPrCqR7NvVfdMBV8ragr2U8BfjX/view?usp=sharing" target="_blank" class="btn-outline">
+      <a href="https://drive.google.com/file/d/17Vf91MFwQQAjIOJSUgedDYGPQMMU5m2Z/view?usp=sharing" target="_blank" class="btn-outline">
         <i class="fas fa-file-text"></i> Download Resume
       </a>
       <a href="https://github.com/SANDEEPxKOMMINENI" target="_blank" class="btn-outline">
